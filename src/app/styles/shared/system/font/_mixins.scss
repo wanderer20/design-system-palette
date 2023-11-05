@@ -1,0 +1,13 @@
+@use "functions" as *;
+
+@mixin font-family($font-family) {
+  font-family: getFontFamily($font-family);
+}
+
+@mixin font-size($font-size) {
+  font-size: getFontSize($font-size);
+}
+
+@mixin font-weight($font-weight) {
+  font-weight: getFontWeight($font-weight);
+}

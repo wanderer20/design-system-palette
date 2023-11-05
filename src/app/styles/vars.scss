@@ -1,0 +1,38 @@
+@use "@/app/styles/shared" as *;
+
+:root {
+  --font-family-primary: #{getFontFamily('primary')};
+  --font-family-secondary: #{getFontFamily('secondary')};
+  --font-family-icon-pack: #{getFontFamily('icon-pack')};
+
+  --font-size-extra-small: #{getFontSize('extra-small')};
+  --font-size-small: #{getFontSize('small')};
+  --font-size-base: #{getFontSize('base')};
+  --font-size-middle: #{getFontSize('middle')};
+  --font-size-large: #{getFontSize('large')};
+
+  --font-weight-thin: #{getFontWeight('thin')};
+  --font-weight-extra-light: #{getFontWeight('extra-light')};
+  --font-weight-light: #{getFontWeight('light')};
+  --font-weight-regular: #{getFontWeight('regular')};
+  --font-weight-medium: #{getFontWeight('medium')};
+  --font-weight-semi-bold: #{getFontWeight('semi-bold')};
+  --font-weight-extra-bold: #{getFontWeight('extra-bold')};
+  --font-weight-black: #{getFontWeight('black')};
+
+  --font-weight-base: var(--font-weight-regular);
+
+  --border-radius-small: #{getBorderRadius('small')};
+  --border-radius-base: #{getBorderRadius('base')};
+  --border-radius-round: #{getBorderRadius('round')};
+  --border-radius-circle: #{getBorderRadius('circle')};
+
+  --transition-timing-function: easy-in;
+  --transition-duration: 0.3s;
+}
+
+
+:root {
+  --global-white: #ffffff;
+  --global-black: #000000;
+}

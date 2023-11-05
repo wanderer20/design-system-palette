@@ -1,0 +1,21 @@
+$xs   : 0;
+$sm   : 576px;
+$md   : 768px;
+$lg   : 992px;
+$xl   : 1200px;
+$xxl  : 1400px;
+
+$breakpoints: (
+  'mobile'          : $sm,
+  'small-tablet'    : $md,
+  'tablet'          : $lg,
+  'desktop'         : $xl,
+  'large-desktop'   : $xxl,
+
+  'xs'              : $xs,
+  'sm'              : $sm,
+  'md'              : $md,
+  'lg'              : $lg,
+  'xl'              : $xl,
+  'xxl'             : $xxl,
+);

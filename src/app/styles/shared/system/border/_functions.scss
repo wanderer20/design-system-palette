@@ -1,0 +1,5 @@
+@use "var" as *;
+
+@function getBorderRadius($radius) {
+  @return map-get($border-radii, $radius);
+}

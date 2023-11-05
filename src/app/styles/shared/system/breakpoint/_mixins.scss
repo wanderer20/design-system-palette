@@ -1,0 +1,9 @@
+@use "functions" as *;
+
+@mixin respond-to($size) {
+  $value: getBreakpoint($size);
+
+  @media only screen and (max-width: $value + px) {
+    @content;
+  }
+}

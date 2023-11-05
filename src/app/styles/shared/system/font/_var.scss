@@ -1,0 +1,31 @@
+$font-family-primary    : "Inter", sans-serif !default;
+$font-family-secondary  : "Inter", sans-serif !default;
+$font-family-icon-pack  : "Icons" !default;
+
+
+$font-weights: (
+  'thin'        : 100,
+  'extra-light' : 200,
+  'light'       : 300,
+  'regular'     : 400,
+  'medium'      : 500,
+  'semi-bold'   : 600,
+  'bold'        : 700,
+  'extra-bold'  : 800,
+  'black'       : 900,
+);
+
+$font-sizes: (
+  '0'           : 0,
+  'extra-small' : 12px,
+  'small'       : 13px,
+  'base'        : 14px,
+  'middle'      : 16px,
+  'large'       : 18px,
+);
+
+$font-families: (
+  'primary'     : $font-family-primary,
+  'secondary'   : $font-family-secondary,
+  'icon-pack'   : $font-family-icon-pack,
+);

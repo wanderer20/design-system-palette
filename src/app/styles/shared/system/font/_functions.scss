@@ -1,0 +1,13 @@
+@use "var" as *;
+
+@function getFontFamily($font-family) {
+  @return map-get($font-families, $font-family);
+}
+
+@function getFontSize($font-size) {
+  @return map-get($font-sizes, $font-size);
+}
+
+@function getFontWeight($font-weight) {
+  @return map-get($font-weights, $font-weight);
+}

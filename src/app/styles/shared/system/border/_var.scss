@@ -1,0 +1,11 @@
+$border-radius-small  : 2px;
+$border-radius-base   : 4px;
+$border-radius-round  : 20px;
+$border-radius-circle : 100%;
+
+$border-radii: (
+  'small' : $border-radius-small,
+  'base': $border-radius-base,
+  'round': $border-radius-round,
+  'circle': $border-radius-circle,
+);
