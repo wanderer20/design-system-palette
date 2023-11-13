@@ -1,0 +1,1 @@
+import{_ as r}from"./vite-plugin-vue-export-helper-c27b6911.js";import{aL as t}from"./index-97360451.js";const o={};function a(e,s){return t(e.$slots,"default")}const c=r(o,[["render",a]]);export{c as default};
