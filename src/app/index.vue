@@ -4,9 +4,13 @@ import { AppLayout } from '@/app/layouts'
 </script>
 
 <template>
-  <app-layout>
-    <router-view />
-  </app-layout>
+  <suspense>
+    <app-layout>
+      <router-view v-slot="{ Component }">
+        <component :is="Component" />
+      </router-view>
+    </app-layout>
+  </suspense>
 </template>
 
 <style lang="scss">

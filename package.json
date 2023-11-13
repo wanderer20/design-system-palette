@@ -22,10 +22,11 @@
   "devDependencies": {
     "@types/apca-w3": "^0.1.2",
     "@types/chroma-js": "^2.4.2",
-    "@types/node": "^20.8.10",
+    "@types/node": "^20.9.0",
     "@vitejs/plugin-vue": "^4.2.3",
     "@vue/shared": "^3.3.7",
     "sass": "^1.69.5",
+    "type-fest": "^4.7.1",
     "typescript": "^5.0.2",
     "vite": "^4.4.5",
     "vite-svg-loader": "^4.0.0",

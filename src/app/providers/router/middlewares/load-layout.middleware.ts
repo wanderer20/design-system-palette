@@ -1,5 +1,6 @@
-import type {RouteLocationNormalized} from "vue-router";
+import type { RouteLocationNormalized } from "vue-router";
 import { LayoutTemplateEnum, getLayoutByTemplate } from "@/app/layouts";
+import type { DefineComponent } from "vue";
 
 export async function loadLayoutMiddleware(route: RouteLocationNormalized): Promise<void> {
     const { layout } = route.meta
@@ -9,7 +10,7 @@ export async function loadLayoutMiddleware(route: RouteLocationNormalized): Prom
     // https://github.com/rollup/plugins/tree/master/packages/dynamic-import-vars#limitations
     const fileNameWithoutExtension = fileName.split('.vue')[0]
 
-    const component = await import(`../../../layouts/templates/${fileNameWithoutExtension}.vue`)
+    const component: DefineComponent = await import(`../../../layouts/templates/${fileNameWithoutExtension}.vue`)
 
     route.meta.layoutComponent = component.default
 }

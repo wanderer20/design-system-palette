@@ -7,6 +7,7 @@ const CWD = process.cwd()
 const _root = CWD.replace(/\\/g, '/')
 
 export default defineConfig({
+  base: process.env.NODE_ENV === 'production' ? '/design-system-palette/' : '/',
   plugins: [
       vue(),
       svgLoader(),
