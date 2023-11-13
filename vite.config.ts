@@ -26,5 +26,12 @@ export default defineConfig({
         additionalData: '@use "@/app/styles/vars.scss" as *; @use "@/app/styles/shared" as *;'
       }
     }
+  },
+  build: {
+    rollupOptions: {
+      output: {
+        sanitizeFileName: name => `${name.replace('\x00', 'vite-').replace(/:/, '-')}`
+      }
+    }
   }
 })
