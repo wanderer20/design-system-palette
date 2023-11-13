@@ -1,0 +1,61 @@
+@use "@/app/styles/shared" as *;
+@use "~vue-color-kit/dist/vue-color-kit.css";
+
+.color-picker {
+  $p: &;
+
+  &__wrapper {}
+  &__content {
+    position: relative;
+  }
+  &__preview {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 24px;
+    height: 24px;
+    border-radius: var(--el-border-radius-base);
+    border: var(--el-border);
+    cursor: pointer;
+    z-index: 1;
+
+    #{$p}__content--size-small & {
+      top: 4px;
+      left: 4px;
+      width: 16px;
+      height: 16px;
+    }
+
+    #{$p}__content--size-large & {
+      top: 4px;
+      left: 4px;
+      width: 32px;
+      height: 32px;
+    }
+  }
+  &__value {
+    position: relative;
+  }
+  &__input {
+    .el-input__wrapper {
+      padding-left: 36px;
+
+      #{$p}__content--size-small & {
+        padding-left: 26px;
+      }
+      #{$p}__content--size-large & {
+        padding-left: 46px;
+      }
+    }
+  }
+  &__popper {
+    width: 224px;
+  }
+  &__dropdown {}
+  &__dropdown-inner {}
+  &__picker {
+    width: 100% !important;
+    min-width: 200px;
+    padding: getSpacing('x3');
+  }
+}

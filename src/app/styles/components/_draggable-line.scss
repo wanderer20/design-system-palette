@@ -1,0 +1,19 @@
+.draggable-line {
+  --columns: 5;
+  --rows: 2;
+  --color: var(--global-black);
+  --size: 5px;
+
+  background-image: radial-gradient(ellipse, var(--color) 0%, var(--color) 30%, transparent 34%);
+  background-size: var(--size) var(--size);
+  background-repeat: repeat;
+
+  width: calc(var(--columns) * var(--size));
+  height: calc(var(--rows) * var(--size));
+
+  cursor: grab;
+
+  &:focus {
+    cursor: grabbing;
+  }
+}

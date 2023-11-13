@@ -1,0 +1,83 @@
+@use "@/app/styles/shared" as *;
+
+.contrast-checker {
+  &__wrapper {}
+  &__init-data {
+    border-bottom: 1px solid var(--neutral_7);
+  }
+  &__info {
+    background-color: var(--neutral_8);
+  }
+}
+.contrast-checker-color-list {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__item {
+    flex: 0 0 auto;
+    width: 50%;
+    padding: getSpacing('x3') getSpacing('x5');
+  }
+}
+
+.contrast-checker-color-item {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: getSpacing('x1');
+  }
+  &__label {
+    font-size: 0.875em;
+    color: var(--neutral_-1);
+  }
+  &__value {
+    display: flex;
+    align-items: center;
+    gap: getSpacing('x3');
+  }
+  &__preview {
+    width: 24px;
+    height: 24px;
+
+    background-color: var(--color);
+    border: 1px solid var(--neutral_7);
+    border-radius: getBorderRadius('base');
+  }
+  &__text {
+    font-size: 0.92em;
+    font-weight: var(--font-weight-semi-bold);
+    line-height: 1.2;
+  }
+}
+
+.contrast-checker-info {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+  &__item {
+    flex: 0 0 auto;
+    width: 50%;
+    padding: getSpacing('x5') getSpacing('x5');
+    border-left: 1px solid var(--neutral_7);
+
+    &:first-child {
+      border-left: 0;
+    }
+  }
+}
+
+
+
+
+.contrast-checker-results {
+  &__wrapper {}
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: getSpacing('x1');
+  }
+  &__item {}
+}

@@ -1,0 +1,26 @@
+@use "@/app/styles/shared" as *;
+
+.contrast-checker-result {
+  &__wrapper {
+    display: flex;
+    gap: getSpacing('x4');
+  }
+  &__label {
+    font-weight: var(--font-weight-bold);
+    min-width: 112px;
+  }
+  &__value {
+    display: flex;
+    align-items: center;
+    gap: getSpacing('x1');
+    min-width: 44px;
+  }
+  &__icon {
+    --color: var(--negative_0);
+
+    &--success {
+      --color: var(--positive_0);
+    }
+  }
+  &__text {}
+}
